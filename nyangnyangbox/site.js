@@ -16,6 +16,6 @@ document.querySelectorAll('[data-language]').forEach(link => {
 });
 if (language === 'en') {
   document.title = 'Nyang Nyang Box: Cat Merge · Your little box of cozy';
-  document.querySelector('meta[name="description"]').content = 'Drop, merge, and meet your next kitty. A cozy cat puzzle with Paw Chop, cute outfits, and a collection of little friends. Coming to iPhone.';
+  document.querySelector('meta[name="description"]').content = 'Drop, merge, and meet your next kitty. A cozy cat puzzle with Paw Chop, cute outfits, and a collection of little friends. Out now on iPhone.';
   document.querySelector('link[rel="canonical"]').href = 'https://binijuni-studio.github.io/nyangnyangbox/?lang=en';
 }
