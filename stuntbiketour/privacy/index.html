@@ -11,7 +11,7 @@
 <nav><a href="../">← Stunt Bike Tour</a> · <a href="#en">English</a></nav>
 
 <h1>Stunt Bike Tour 개인정보 처리방침</h1>
-<p class="date">시행일: 2026년 11월 2일</p>
+<p class="date">시행일: 2026년 11월 23일</p>
 <p>BiniJuni(이하 “개발자”)는 모바일 게임 <strong>Stunt Bike Tour</strong>(이하 “앱”)를 제공하며, 이용자의 개인정보를 소중히 다룹니다. 이 방침은 앱이 어떤 정보를 처리하고, 왜 처리하며, 이용자가 어떤 선택을 할 수 있는지 설명합니다.</p>
 
 <h2>1. 개발자가 직접 수집하는 정보</h2>
@@ -21,10 +21,11 @@
 </ul>
 
 <h2>2. 제3자 서비스가 처리하는 정보</h2>
-<p>앱은 광고와 결제를 위해 아래 서비스를 이용하며, 각 서비스는 자체 개인정보 처리방침에 따라 정보를 처리합니다.</p>
+<p>앱은 광고, 결제, 이용 통계를 위해 아래 서비스를 이용하며, 각 서비스는 자체 개인정보 처리방침에 따라 정보를 처리합니다.</p>
 <div class="table"><table>
 <tr><th>서비스</th><th>처리하는 정보</th><th>목적</th></tr>
 <tr><td>Google AdMob (광고)</td><td>광고 식별자(Android 광고 ID, iOS의 경우 이용자가 허용한 경우 IDFA), IP 주소 및 이를 통한 대략적 위치, 기기 정보(모델·운영체제), 광고 노출·클릭 등 상호작용, 앱 성능·오류 진단 정보</td><td>광고 제공, 광고 성과 측정, 부정 클릭 방지</td></tr>
+<tr><td>Google Analytics for Firebase (이용 통계)</td><td>앱 인스턴스 ID, 기기 정보(모델·운영체제·앱 버전·언어), IP 주소로 추정한 국가·지역, 앱 설치·실행·세션 시간, 화면 이동·스테이지 시작·클리어·충돌·광고 보상 등 앱 사용 기록</td><td>이용 현황과 스테이지별 이탈 지점 파악, 난이도·기능 개선 (광고 식별자는 수집하지 않으며 광고 목적으로 사용하지 않음)</td></tr>
 <tr><td>RevenueCat (결제 관리)</td><td>구매 내역(상품·가격·일시), 익명 앱 사용자 ID, 기기·스토어 정보</td><td>구매 확인, 구매 복원, 결제 오류 처리</td></tr>
 <tr><td>Apple App Store / Google Play (결제)</td><td>결제 수단 등 결제 정보</td><td>인앱 결제 처리</td></tr>
 </table></div>
@@ -32,6 +33,7 @@
 <li>결제는 Apple과 Google이 처리하며, <strong>개발자는 카드 번호 등 결제 수단 정보를 받지 않습니다.</strong></li>
 <li>Google 개인정보처리방침: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
 <li>Google이 파트너 앱의 정보를 사용하는 방식: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></li>
+<li>Firebase 개인정보 보호 안내: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
 <li>RevenueCat 개인정보처리방침: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></li>
 </ul>
 
@@ -49,6 +51,7 @@
 <h2>5. 보관 및 삭제</h2>
 <ul>
 <li>기기에 저장된 게임 데이터는 앱 삭제 시 삭제됩니다.</li>
+<li>Firebase Analytics의 이벤트 단위 데이터는 2개월 동안 보관한 후 삭제됩니다. 앱 인스턴스 ID 등 사용자 단위 데이터는 마지막 이용 후 14개월 동안 보관되며, 그 기간 안에 다시 이용하면 보관 기간이 갱신됩니다.</li>
 <li>제3자 서비스가 처리한 정보는 각 서비스의 방침에 따라 보관·삭제됩니다. 삭제를 원하시면 아래 연락처로 요청해 주시면 해당 서비스에 요청할 수 있도록 안내해 드립니다.</li>
 </ul>
 
@@ -68,7 +71,7 @@
 
 <h1 id="en" lang="en">Stunt Bike Tour Privacy Policy</h1>
 <div lang="en">
-<p class="date">Effective date: November 2, 2026</p>
+<p class="date">Effective date: November 23, 2026</p>
 <p>BiniJuni (“the developer”) provides the mobile game <strong>Stunt Bike Tour</strong> (“the app”). This policy explains what information the app processes, why, and the choices you have.</p>
 
 <h2>1. Information the developer collects</h2>
@@ -78,10 +81,11 @@
 </ul>
 
 <h2>2. Information processed by third-party services</h2>
-<p>The app uses the following services for advertising and payments. Each processes information under its own privacy policy.</p>
+<p>The app uses the following services for advertising, payments and usage analytics. Each processes information under its own privacy policy.</p>
 <div class="table"><table>
 <tr><th>Service</th><th>Information processed</th><th>Purpose</th></tr>
 <tr><td>Google AdMob (ads)</td><td>Advertising identifiers (Android Advertising ID; on iOS the IDFA only if you allow tracking), IP address and approximate location derived from it, device information (model, OS), ad interactions such as views and clicks, app performance and diagnostics</td><td>Serving ads, measuring ad performance, preventing fraud</td></tr>
+<tr><td>Google Analytics for Firebase (usage analytics)</td><td>App instance ID, device information (model, OS, app version, language), country/region estimated from the IP address, installs, app opens and session duration, and app usage such as screen views, stage starts, clears, crashes and ad rewards</td><td>Understanding usage and where players stop, and improving difficulty and features (advertising identifiers are not collected and the data is not used for advertising)</td></tr>
 <tr><td>RevenueCat (purchase management)</td><td>Purchase history (product, price, time), an anonymous app user ID, device and store information</td><td>Validating and restoring purchases, handling billing issues</td></tr>
 <tr><td>Apple App Store / Google Play (billing)</td><td>Payment information</td><td>Processing in-app purchases</td></tr>
 </table></div>
@@ -89,6 +93,7 @@
 <li>Payments are processed by Apple and Google; <strong>the developer never receives your card number or other payment details.</strong></li>
 <li>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
 <li>How Google uses information from apps that use its services: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></li>
+<li>Privacy and Security in Firebase: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
 <li>RevenueCat Privacy Policy: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></li>
 </ul>
 
@@ -106,6 +111,7 @@
 <h2>5. Retention and deletion</h2>
 <ul>
 <li>Game data on your device is deleted when you uninstall the app.</li>
+<li>Firebase Analytics event-level data is kept for two months and then deleted. User-level data such as the app instance ID is kept for 14 months after your last use, and the period restarts if you use the app again within it.</li>
 <li>Information processed by third-party services is retained and deleted under their policies. Contact us below and we will help you submit a deletion request to the relevant service.</li>
 </ul>
 
