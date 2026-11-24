@@ -1,43 +1,22 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="BiniJuni Studio 게임 소개와 고객지원 안내">
-  <meta name="theme-color" content="#fffaf3">
-  <title>BiniJuni Studio</title>
-  <link rel="canonical" href="https://binijuni-studio.github.io/">
-  <style>
-    * { box-sizing: border-box; }
-    body { margin: 0; min-height: 100vh; background: radial-gradient(ellipse at 15% 5%, #e8efdf 0, transparent 45%), radial-gradient(ellipse at 90% 90%, #eee3f2 0, transparent 45%), #fffaf3; color: #503d36; font: 16px/1.6 system-ui, -apple-system, sans-serif; }
-    main { width: min(480px, calc(100% - 40px)); margin: 10vh auto; }
-    h1 { margin: 0; font-size: 28px; letter-spacing: -.8px; }
-    p { margin: 8px 0 28px; color: #756057; }
-    nav { display: grid; gap: 18px; }
-    a { display: flex; align-items: center; gap: 18px; padding: 18px 20px; border: 1px solid #e3d7c8; border-radius: 24px; background: linear-gradient(115deg, #fffdf8, #f0f5e9); color: inherit; text-decoration: none; font-size: 18px; font-weight: 700; box-shadow: 0 4px 0 #e3d7c8, 0 12px 24px #503d3609; transition: transform .18s, box-shadow .18s; }
-    a.parcel { background: linear-gradient(115deg, #fff9ee, #f7e8ed); border-color: #e5d5df; box-shadow: 0 4px 0 #e5d5df, 0 12px 24px #503d3609; }
-    a.bike { background: linear-gradient(115deg, #fffdf8, #fff0de); }
-    a:hover { transform: translateY(-3px); box-shadow: 0 7px 0 #e3d7c8, 0 15px 28px #503d3612; }
-    a.parcel:hover { box-shadow: 0 7px 0 #e5d5df, 0 15px 28px #503d3612; }
-    a:focus-visible { outline: 3px solid #795b95; outline-offset: 4px; }
-    .game-icon { display: block; flex: 0 0 64px; width: 64px; height: 64px; border: 2px solid #fffdf8; border-radius: 18px; object-fit: cover; box-shadow: 0 3px 8px #503d3620; }
-    .bike-icon { display: grid; place-items: center; background: linear-gradient(145deg, #243d50, #101c2b); color: #ffb36c; }
-    .bike-icon svg { width: 48px; height: 48px; }
-    .link-label { min-width: 0; }
-    small { display: block; margin-top: 3px; color: #756057; font-size: 14px; font-weight: 400; }
-    @media (max-width: 360px) { a { padding: 16px; gap: 13px; font-size: 17px; } .game-icon { flex-basis: 56px; width: 56px; height: 56px; border-radius: 16px; } }
-    @media (prefers-reduced-motion: reduce) { a { transition: none; } a:hover { transform: none; } }
-  </style>
-</head>
-<body>
-  <main>
-    <h1>BiniJuni Studio</h1>
-    <p>게임 소개 · 고객지원</p>
-    <nav aria-label="게임 페이지">
-      <a href="nyangnyangbox/"><img class="game-icon" src="nyangnyangbox/assets/app-icon.webp" width="64" height="64" alt=""><span class="link-label">냥냥 박스<small lang="en">Nyang Nyang Box</small></span></a>
-      <a class="parcel" href="pacelstack/"><img class="game-icon" src="pacelstack/assets/app-icon.webp" width="64" height="64" alt=""><span class="link-label">차곡차곡 택배<small lang="en">Parcel Stack</small></span></a>
-      <a class="bike" href="stuntbiketour/"><span class="game-icon bike-icon" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="14" cy="45" r="9"/><circle cx="51" cy="45" r="9"/><path d="M14 45l13-18 11 18H14m24 0 6-19 7 19M22 27h10m8-8h6l5 9M27 27l9-8"/><path d="M24 34h14l-6 8H20" fill="currentColor" stroke="none"/></svg></span><span class="link-label" lang="en">Stunt Bike Tour<small>3D trials bike game</small></span></a>
-    </nav>
-  </main>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f8f4" />
+    <meta name="description" content="일상의 작은 순간에 새로운 즐거움을. 냥냥 박스, 차곡차곡 택배, Stunt Bike Tour를 만드는 비니주니 스튜디오입니다." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="BiniJuni Studio — Small moments. Big delight." />
+    <meta property="og:description" content="일상의 작은 순간에 새로운 즐거움을 만드는 게임 스튜디오." />
+    <meta property="og:url" content="https://binijuni-studio.github.io/" />
+    <meta property="og:image" content="https://binijuni-studio.github.io/nyangnyangbox/assets/app-icon.webp" />
+    <link rel="canonical" href="https://binijuni-studio.github.io/" />
+    <link rel="icon" type="image/svg+xml" href="/pacelstack/studio/assets/logo.svg" />
+    <title>BiniJuni Studio — 일상에 새로운 즐거움을</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript><p>BiniJuni Studio의 게임을 만나보세요.</p><a href="/nyangnyangbox/">냥냥 박스</a> · <a href="/pacelstack/">차곡차곡 택배</a> · <a href="/stuntbiketour/">Stunt Bike Tour</a></noscript>
+    <script type="module" src="/pacelstack/studio/main.tsx"></script>
+  </body>
 </html>
