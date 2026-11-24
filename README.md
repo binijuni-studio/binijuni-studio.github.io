@@ -1,6 +1,6 @@
 # BiniJuni Studio
 
-React·TypeScript·Vite로 만든 회사 홈페이지입니다. React 소스는 요청한 기존 폴더인 `pacelstack/studio`에 있습니다. `pacelstack`은 저장소에 이미 사용 중인 실제 폴더 이름이며, 게임의 영문 표기는 Parcel Stack입니다.
+React·TypeScript·Vite로 만든 회사 홈페이지입니다. React 소스는 `parcelstack/studio`에 있습니다. 게임의 영문 표기는 Parcel Stack이며, 기존 `pacelstack` 주소는 `parcelstack`으로 연결됩니다.
 
 ## 실행
 
@@ -30,13 +30,13 @@ npm run preview
 
 ## 디자인과 수정 위치
 
-- 화면·문구·게임 링크: `pacelstack/studio/App.tsx`
-- 색상·레이아웃·모바일 화면: `pacelstack/studio/style.css`
-- 로고 원본: `pacelstack/studio/assets/logo.svg`
+- 화면·문구·게임 링크: `parcelstack/studio/App.tsx`
+- 색상·레이아웃·모바일 화면: `parcelstack/studio/style.css`
+- 로고 원본: `parcelstack/studio/assets/logo.svg`
 - 메타 정보: 루트 `index.html`
 
 로고는 소문자 **b**와 **j**를 조합한 모노그램입니다. Bini와 Juni를 하나의 둥근 정사각형 안에 담았고, 딥그린은 차분함, 코랄은 가벼운 즐거움을 표현합니다. SVG이므로 작은 파비콘부터 큰 브랜드 심볼까지 선명하게 사용할 수 있습니다.
 
-게임 이미지와 스크린샷은 저장소의 기존 자료를 사용합니다. Pretendard 폰트는 로컬에서 제공하며 라이선스는 `pacelstack/studio/assets/OFL-Pretendard.txt`에 포함했습니다. 문의 링크는 이메일 앱을 엽니다.
+게임 이미지와 스크린샷은 저장소의 기존 자료를 사용합니다. Pretendard 폰트는 로컬에서 제공하며 라이선스는 `parcelstack/studio/assets/OFL-Pretendard.txt`에 포함했습니다. 문의 링크는 이메일 앱을 엽니다.
 
 Stunt Bike Tour 배너와 아이콘은 사용자가 지정한 `D:/Projects/REA_example/RN_UBAN`의 게임 자료를 사용합니다. 출처는 `stuntbiketour/assets/SOURCES.md`에 기록했습니다. 반응형 이미지는 원본 비율을 유지하며, 빌드와 검증 과정에서 TypeScript 타입 검사를 실행합니다.

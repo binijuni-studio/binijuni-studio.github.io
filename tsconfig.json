@@ -16,5 +16,5 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["pacelstack/studio/**/*.ts", "pacelstack/studio/**/*.tsx", "scripts/**/*.ts", "vite.config.ts"]
+  "include": ["parcelstack/studio/**/*.ts", "parcelstack/studio/**/*.tsx", "scripts/**/*.ts", "vite.config.ts"]
 }

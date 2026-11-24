@@ -10,7 +10,7 @@ const dist = resolve(root, 'dist');
 const vite = await createServer({ cacheDir: 'node_modules/.vite-check', server: { middlewareMode: true, hmr: false }, appType: 'custom' });
 
 try {
-  const { default: App } = await vite.ssrLoadModule('/pacelstack/studio/App.tsx');
+  const { default: App } = await vite.ssrLoadModule('/parcelstack/studio/App.tsx');
   const html = renderToStaticMarkup(createElement(App));
   assert.equal((html.match(/<h1\b/g) || []).length, 1, '메인 제목은 하나여야 합니다.');
   assert.ok(html.includes('aria-expanded="false"'), '모바일 메뉴는 닫힌 상태로 시작해야 합니다.');
@@ -48,7 +48,7 @@ try {
 
   async function checkCopiedFiles(source: string, destination: string): Promise<void> {
     for (const entry of await readdir(source, { withFileTypes: true })) {
-      if (entry.name === 'studio' && source === resolve(root, 'pacelstack')) continue;
+      if (entry.name === 'studio' && source === resolve(root, 'parcelstack')) continue;
       const original = join(source, entry.name);
       const copied = join(destination, entry.name);
       if (entry.isDirectory()) await checkCopiedFiles(original, copied);
@@ -56,7 +56,7 @@ try {
     }
   }
 
-  for (const directory of ['nyangnyangbox', 'pacelstack', 'stuntbiketour']) {
+  for (const directory of ['nyangnyangbox', 'parcelstack', 'pacelstack', 'stuntbiketour']) {
     await checkCopiedFiles(resolve(root, directory), resolve(dist, directory));
   }
   assert.deepEqual(await readFile(join(dist, 'app-ads.txt')), await readFile(join(root, 'app-ads.txt')));
